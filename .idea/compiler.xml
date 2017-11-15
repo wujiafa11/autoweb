@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="autoweb-api-gateway" />
+        <module name="autoweb-commons" />
+        <module name="autoweb-commons-config" />
+        <module name="autoweb-commons-core" />
+        <module name="autoweb-self-diagnosis" />
+        <module name="autoweb-server-discovery" />
+        <module name="autoweb-server-rpc" />
+        <module name="autoweb-user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="autoweb" target="1.8" />
+      <module name="autoweb-api-gateway" target="1.8" />
+      <module name="autoweb-commons" target="1.8" />
+      <module name="autoweb-commons-config" target="1.8" />
+      <module name="autoweb-commons-core" target="1.5" />
+      <module name="autoweb-self-diagnosis" target="1.8" />
+      <module name="autoweb-server-discovery" target="1.8" />
+      <module name="autoweb-server-rpc" target="1.8" />
+      <module name="autoweb-user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

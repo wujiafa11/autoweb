@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="autoweb-user:war">
+    <output-path>$PROJECT_DIR$/autoweb-user/target</output-path>
+    <root id="archive" name="autoweb-user.war">
+      <element id="artifact" artifact-name="autoweb-user:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/autoweb.iml" filepath="$PROJECT_DIR$/autoweb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoweb-api-gateway/autoweb-api-gateway.iml" filepath="$PROJECT_DIR$/autoweb-api-gateway/autoweb-api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoweb-commons/autoweb-commons.iml" filepath="$PROJECT_DIR$/autoweb-commons/autoweb-commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoweb-commons-config/autoweb-commons-config.iml" filepath="$PROJECT_DIR$/autoweb-commons-config/autoweb-commons-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoweb-commons-core/autoweb-commons-core.iml" filepath="$PROJECT_DIR$/autoweb-commons-core/autoweb-commons-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoweb-self-diagnosis/autoweb-self-diagnosis.iml" filepath="$PROJECT_DIR$/autoweb-self-diagnosis/autoweb-self-diagnosis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoweb-server-discovery/autoweb-server-discovery.iml" filepath="$PROJECT_DIR$/autoweb-server-discovery/autoweb-server-discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoweb-server-rpc/autoweb-server-rpc.iml" filepath="$PROJECT_DIR$/autoweb-server-rpc/autoweb-server-rpc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoweb-user/autoweb-user.iml" filepath="$PROJECT_DIR$/autoweb-user/autoweb-user.iml" />
+    </modules>
+  </component>
+</project>

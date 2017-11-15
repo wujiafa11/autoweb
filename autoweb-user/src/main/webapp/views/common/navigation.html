@@ -1,0 +1,51 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul side-navigation class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+
+                <div class="profile-element" uib-dropdown>
+                    <a uib-dropdown-toggle href>
+                            <span class="clear">
+                                <span class="block m-t-xs">
+                                    <strong class="font-bold">{{main.userName}}</strong>
+                             </span>
+                                <span class="text-muted text-xs block">Example menu<b class="caret"></b></span>
+                            </span>
+                    </a>
+                    <ul uib-dropdown-menu="" class="animated fadeInRight m-t-xs">
+                        <li><a href="">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+
+            </li>
+
+            <li ui-sref-active="active">
+                <a ui-sref="index.main"><i class="fa fa-laptop"></i> <span class="nav-label">Main page</span> </a>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.minor"><i class="fa fa-desktop"></i> <span class="nav-label">Minor page</span></a>
+            </li>
+            <li ng-class="{active: $state.includes('mailbox')}">
+                <a href="#"><i class="fa fa-envelope"></i> <span class="nav-label">代码自动化 </span><span class="label label-warning pull-right">16/24</span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('mailbox')}">
+                    <li ui-sref-active="active"><a ui-sref="mailbox.inbox">表配置</a></li>
+                    <li ui-sref-active="active"><a ui-sref="mailbox.email_view">代码生成</a></li>
+                    <li ui-sref-active="active"><a ui-sref="mailbox.email_template">模板管理</a></li>
+                </ul>
+            </li>
+            <li ui-sref-active="active">
+                <a ui-sref="index.minor"><i class="fa fa-desktop"></i> <span class="nav-label">疾病管理</span></a>
+            </li>
+            <li ng-class="{active: $state.includes('hints')}">
+                <a href="#"><i class="fa fa-th-large"></i> <span class="nav-label">适应症管理</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse" ng-class="{in: $state.includes('hints')}">
+                    <li ui-sref-active="active"><a ui-sref="hints.disease">疾病管理</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</nav>

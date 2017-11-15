@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: auto-self-diagnosis
+  profiles:
+    active: core
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:18081/eureka/
+#  instance:
+#      status-page-url: http://doctorppe.zhyaoshi.com/info
+server:
+  port: 18092
+logging:
+  config: classpath:logback-diagnosis.xml

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: auto-api-gateway
+  profiles:
+    active: core
+server:
+  port: 18083
+#配置zuul
+zuul:
+  routes:
+    abc: 
+      path: /user-api/**
+      service-id: auto-user
+    disease: 
+      path: /diagnosis-api/**
+      service-id: auto-self-diagnosis
+  

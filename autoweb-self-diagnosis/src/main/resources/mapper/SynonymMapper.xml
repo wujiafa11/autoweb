@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.auto.self.diagnosis.pojo.SynonymMapper">
+	<resultMap type="com.auto.self.diagnosis.pojo.Synonym" id="BaseResultMap">
+		<result property="synonym" column="t106_c003"/>
+		<result property="symptomName" column="t109_c003"/>
+	</resultMap>
+	
+	<select id="query" parameterType="HashMap" resultMap="BaseResultMap">
+		SELECT
+		t106.c003 as 't106_c003',
+		t109.c003 as 't109_c003'
+		FROM
+		t106
+		INNER JOIN t109 ON t106.c001 = t109.c001
+		<where>
+			<if test="wordList != null">
+				and t106.c003 in
+				<foreach collection="wordList" item="item" open="(" separator="," close=")">
+					 #{item}
+				</foreach>			
+			</if>
+		</where>
+	</select>
+</mapper>

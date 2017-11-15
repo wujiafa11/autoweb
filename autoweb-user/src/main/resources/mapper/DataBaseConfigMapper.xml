@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.auto.user.pojo.DataBaseConfig" >
+
+    <select id="getTable" resultType="DataRecord" parameterType="HashMap">
+        <![CDATA[
+        select
+            table_name as tableName,
+            table_comment as tableComment
+            from information_schema.tables
+            where TABLE_SCHEMA = 'autoweb' and table_name=#{tableName}
+        ]]>
+    </select>
+
+    <select id="queryColumn" parameterType="HashMap" resultType="DataRecord">
+        <![CDATA[
+        select
+            column_name as columnName,
+            data_type as dataType,
+            ifnull(numeric_precision,ifnull(character_maximum_length,0)) as maximumLength,
+            numeric_scale as numericScale,
+            is_nullable as nullable,
+            column_comment as columnComment,
+            column_key as columnKey
+        from information_schema.columns
+        where TABLE_SCHEMA = 'autoweb' and table_name = #{tableName}
+        ]]>
+    </select>
+</mapper>
